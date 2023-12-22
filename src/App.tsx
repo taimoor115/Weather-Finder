@@ -6,7 +6,7 @@ function App() {
     <>
       <>
         <Header name="Weather App" />
-        <Weather />
+        <Weather name="Karachi" />
       </>
     </>
   );
