@@ -9,8 +9,6 @@ interface Props {
 const Search = ({ onSearch }: Props) => {
   const ref = useRef<HTMLInputElement>(null);
 
-  console.log(ref.current?.value);
-
   return (
     <>
       <form

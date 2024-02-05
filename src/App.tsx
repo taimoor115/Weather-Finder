@@ -8,8 +8,6 @@ const App = () => {
   const [city, setCity] = useState("");
   const { data, error } = useData(city);
 
-  console.log(data);
-
   return (
     <>
       <Flex flexDirection={"column"} alignItems={"center"}>
