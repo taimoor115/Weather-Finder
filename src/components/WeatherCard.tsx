@@ -27,7 +27,7 @@ const WeatherCard = ({
     <>
       <Stack>
         <Flex alignItems={"center"} flexDirection={"column"}>
-          <Image src={`./public/${description}.png`} width={"150px"} />
+          <Image src={`/${description}.png`} width={"150px"} />
           <Heading padding={2} size="2xl">
             {name}
           </Heading>
