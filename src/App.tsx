@@ -15,8 +15,7 @@ const App = () => {
         <Search onSearch={(city) => setCity(city)} />
       </Flex>
       <Flex alignItems={"center"} flexDirection={"column"}>
-        {error && <Heading size={"sm"}>Enter Valid City Name </Heading>}
-        {data != null ? (
+        {data != null && !error ? (
           <WeatherCard
             name={data?.name}
             description={data?.weather[0].main}
@@ -30,7 +29,7 @@ const App = () => {
           />
         ) : (
           <Heading size={"md"} marginTop={5}>
-            Enter City
+            Enter Valid City
           </Heading>
         )}
       </Flex>
